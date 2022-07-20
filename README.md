@@ -5,7 +5,7 @@ Essa action irá pegar o código dentro do repositório e inseri-lo automaticame
 - Como funciona: Criamos um docker com a imagem `python:3`, instalamos [rclone](https://rclone.org/) e executamos um script em Python que cria um arquivo de configuração do rclone e executa o mesmo para buscar os arquivos do repositório e copia-los para uma pasta pre-definida.
 
 ## 2 - Limitações
-Até o momento não é possível utilizar essa action em Sharepoint que precisa de algum tipo de autenticação dupla (Ex.: Necessário conexão interna)
+Até o momento não é possível utilizar essa action em Sharepoint que precisa de algum tipo de autenticação dupla (Ex.: Requer 2FA ou autenticação com algum controlador de domino em rede privada)
 
 ## 3 - Como utilizar
 - Crie no seu respositório o arquivo `.github/workflows/deploy.yaml`, dentro dele insira:
