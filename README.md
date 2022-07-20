@@ -23,10 +23,10 @@ jobs:
       - name: Executa checkout no repositório 
         uses: actions/checkout@v2
       - name: Exeuctando o deploy
-        uses: Obuc/action-deploy-sp
+        uses: Obuc/action-deploy-sp@v1
         with:
           project: SuperImportante
-          url_sp: https://obuc.sharepoint.com/sites/development
+          url_sp: https://super.sharepoint.com/sites/importante
           user: ${{ secrets.USER }}
           pass: ${{ secrets.PASS }}
           src_folder: test/
