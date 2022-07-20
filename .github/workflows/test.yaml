@@ -1,15 +1,15 @@
-name: Workflow de Teste
+name: Testing Action
 on: push
 jobs:
-  first-job:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Executa checkout no repositório 
         uses: actions/checkout@v2
-      - name: Run Action
-        uses: ./
+      - name: Exeuctando o deploy
+        uses: Obuc/action-deploy-sp
         with:
-          project: teste
+          project: SuperImportante
           url_sp: https://obuc.sharepoint.com/sites/development
           user: ${{ secrets.USER }}
           pass: ${{ secrets.PASS }}
