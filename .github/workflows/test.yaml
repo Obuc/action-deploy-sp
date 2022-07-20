@@ -11,7 +11,7 @@ jobs:
         with:
           project: teste
           url_sp: https://obuc.sharepoint.com/sites/development
-          user: {{ secrets.USER }}
-          pass: {{ secrets.PASS }}
+          user: ${{ secrets.USER }}
+          pass: ${{ secrets.PASS }}
           src_folder: test/
           dst_folder: deploy_test/
