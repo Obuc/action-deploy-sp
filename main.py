@@ -15,7 +15,7 @@ logging.basicConfig(
 )
 
 def build_cfg():
-    obc_rclone = rclone.with_config("").run_cmd(command="obscure", extra_args=['Teste'])
+    obc_rclone = rclone.with_config("").run_cmd(command="obscure", extra_args=[password])
     obc_pass = obc_rclone.get('out').decode("utf-8")
 
     return """
