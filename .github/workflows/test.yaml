@@ -1,0 +1,17 @@
+name: Workflow de Teste
+on: push
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Run Action
+        uses: ./
+        with:
+          project: teste
+          url_sp: https://obuc.sharepoint.com/sites/development
+          user: {{ secrets.USER }}
+          pass: {{ secrets.PASS }}
+          src_folder: test/
+          dst_folder: deploy_test/

@@ -1,0 +1,28 @@
+name: deploy-sp-obuc
+description: This action helps developers deploy code on Sharepoint via WebDav
+author: 'dostoievskiab'
+inputs:
+  project:
+    required: true
+    description: Name of the project you're deploying
+  url_sp:
+    required: true
+    description: Sharepoint website URL. Example https://bla.sharepoint.com/sites/Blabla
+  user:
+    required: true
+    description: User that will be used to authenticate in Sharepoint Online
+  pass:
+    required: true
+    description: Password of User that will be used to authenticate in Sharepoint Online
+  src_folder:
+    required: true
+    description: Location where the code is on repository. Example src/
+  dst_folder:
+    required: true
+    description: Location that where the code should be. Example system/
+runs:
+  using: docker
+  image: 'Dockerfile'
+branding:
+  icon: copy
+  color: green
