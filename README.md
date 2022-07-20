@@ -12,7 +12,8 @@ Até o momento não é possível utilizar essa action em Sharepoint que precisa 
 
 ```yaml
 name: Testing Action
-on: push
+on: 
+  workflow_dispatch:
 jobs:
   deploy:
     runs-on: ubuntu-latest
