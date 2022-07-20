@@ -40,4 +40,5 @@ jobs:
     - O campo `dst_folder: deploy_test/` indica aonde você estará salvando os arquivos DENTRO do Sharepoint
 
 - Agora bastar criar os 2 Secrets de Actions no repositório contendo o **USER** com seu usuário (ex.: blabla@blabla.com.br) e **PASS** com sua senha!
+
 **Importante**! Nunca insira sua senha manualmente sempre utilize os secrets do Github.
