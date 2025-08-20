@@ -13,7 +13,7 @@ jobs:
       - name: Executa checkout no repositório 
         uses: actions/checkout@v2
       - name: Exeuctando o deploy
-        uses: Obuc/action-deploy-sp@main
+        uses: Obuc/action-deploy-sp@WD-164
         with:
           project: SuperImportante
           url_sp: https://obuc.sharepoint.com/sites/development
