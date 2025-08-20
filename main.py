@@ -24,7 +24,7 @@ def build_cfg():
 
     return """
     [sharepoint]
-    type = webdav
+    type = sharepoint
     url = {0}
     vendor = sharepoint
     auth_url = {1}
