@@ -6,6 +6,10 @@ project_name = os.environ['INPUT_PROJECT']
 url_sp = os.environ['INPUT_URL_SP']
 user = os.environ['INPUT_USER']
 password = os.environ['INPUT_PASS']
+auth_url = os.environ['INPUT_AUTH_URL']
+token_url = os.environ['INPUT_TOKEN_URL']
+client_id = os.environ['INPUT_CLIENT_ID']
+client_secret = os.environ['INPUT_CLIENT_SECRET']
 source_folder = os.environ['INPUT_SRC_FOLDER']
 destination_folder = os.environ['INPUT_DST_FOLDER']
 
@@ -23,9 +27,11 @@ def build_cfg():
     type = webdav
     url = {0}
     vendor = sharepoint
-    user = {1}
-    pass = {2}
-    """.format(url_sp, user ,obc_pass)
+    auth_url = {1}
+    token_url = {2}
+    client_id = {3}
+    client_secret = {4}
+    """.format(url_sp, auth_url, token_url, client_id, client_secret)
 
 def main():
     cfg = build_cfg()

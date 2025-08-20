@@ -19,5 +19,9 @@ jobs:
           url_sp: https://obuc.sharepoint.com/sites/development
           user: ${{ secrets.USER }}
           pass: ${{ secrets.PASS }}
+          auth_url: ${{ secrets.AUTH_URL }}
+          token_url: ${{ secrets.TOKEN_URL }}
+          client_id: ${{ secrets.CLIENT_ID }}
+          client_secret: ${{ secrets.CLIENT_SECRET }}
           src_folder: test/
           dst_folder: deploy_test/
