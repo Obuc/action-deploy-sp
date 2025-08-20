@@ -24,7 +24,7 @@ def build_cfg():
 
     return """
     [sharepoint]
-    type = sharepoint
+    type = onedrive
     url = {0}
     vendor = sharepoint
     auth_url = {1}
