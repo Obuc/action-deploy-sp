@@ -13,15 +13,11 @@ jobs:
       - name: Executa checkout no repositório 
         uses: actions/checkout@v2
       - name: Exeuctando o deploy
-        uses: Obuc/action-deploy-sp@WD-164
+        uses: Obuc/action-deploy-sp@main
         with:
           project: SuperImportante
           url_sp: https://obuc.sharepoint.com/sites/development
           user: ${{ secrets.USER }}
           pass: ${{ secrets.PASS }}
-          auth_url: ${{ secrets.AUTH_URL }}
-          token_url: ${{ secrets.TOKEN_URL }}
-          client_id: ${{ secrets.CLIENT_ID }}
-          client_secret: ${{ secrets.CLIENT_SECRET }}
           src_folder: test/
           dst_folder: deploy_test/
